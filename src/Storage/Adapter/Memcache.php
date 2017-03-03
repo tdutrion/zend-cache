@@ -108,7 +108,7 @@ class Memcache extends AbstractAdapter implements
      * Set options.
      *
      * @param  array|Traversable|MemcacheOptions $options
-     * @return Memcache
+     * @return self Provides a fluent interface
      * @see    getOptions()
      */
     public function setOptions($options)

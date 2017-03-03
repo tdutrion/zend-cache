@@ -72,7 +72,7 @@ class PluginOptions extends AbstractOptions
      * - ClearExpiredByFactor
      *
      * @param  int $clearingFactor
-     * @return PluginOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setClearingFactor($clearingFactor)
     {
@@ -101,7 +101,7 @@ class PluginOptions extends AbstractOptions
      *
      * @param  null|callable $exceptionCallback
      * @throws Exception\InvalidArgumentException
-     * @return PluginOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setExceptionCallback($exceptionCallback)
     {
@@ -129,7 +129,7 @@ class PluginOptions extends AbstractOptions
      * Exit if connection aborted and ignore_user_abort is disabled.
      *
      * @param  bool $exitOnAbort
-     * @return PluginOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setExitOnAbort($exitOnAbort)
     {
@@ -154,7 +154,7 @@ class PluginOptions extends AbstractOptions
      * - OptimizeByFactor
      *
      * @param  int $optimizingFactor
-     * @return PluginOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setOptimizingFactor($optimizingFactor)
     {
@@ -183,7 +183,7 @@ class PluginOptions extends AbstractOptions
      *
      * @param  string|SerializerAdapter $serializer
      * @throws Exception\InvalidArgumentException
-     * @return PluginOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setSerializer($serializer)
     {
@@ -229,7 +229,7 @@ class PluginOptions extends AbstractOptions
      * - Serializer
      *
      * @param  mixed $serializerOptions
-     * @return PluginOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setSerializerOptions($serializerOptions)
     {
@@ -257,7 +257,7 @@ class PluginOptions extends AbstractOptions
      * - ExceptionHandler
      *
      * @param  bool $throwExceptions
-     * @return PluginOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setThrowExceptions($throwExceptions)
     {

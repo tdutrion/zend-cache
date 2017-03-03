@@ -108,7 +108,7 @@ abstract class AbstractAdapter implements StorageInterface, EventsCapableInterfa
      * Set options.
      *
      * @param  array|Traversable|AdapterOptions $options
-     * @return AbstractAdapter Provides a fluent interface
+     * @return self Provides a fluent interface
      * @see    getOptions()
      */
     public function setOptions($options)
@@ -153,7 +153,7 @@ abstract class AbstractAdapter implements StorageInterface, EventsCapableInterfa
      * @see    setWritable()
      * @see    setReadable()
      * @param  bool $flag
-     * @return AbstractAdapter Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setCaching($flag)
     {
@@ -269,7 +269,7 @@ abstract class AbstractAdapter implements StorageInterface, EventsCapableInterfa
      *
      * @param  Plugin\PluginInterface $plugin
      * @param  int $priority
-     * @return AbstractAdapter Provides a fluent interface
+     * @return self Provides a fluent interface
      * @throws Exception\LogicException
      */
     public function addPlugin(Plugin\PluginInterface $plugin, $priority = 1)
@@ -292,7 +292,7 @@ abstract class AbstractAdapter implements StorageInterface, EventsCapableInterfa
      * Unregister an already registered plugin
      *
      * @param  Plugin\PluginInterface $plugin
-     * @return AbstractAdapter Provides a fluent interface
+     * @return self Provides a fluent interface
      * @throws Exception\LogicException
      */
     public function removePlugin(Plugin\PluginInterface $plugin)

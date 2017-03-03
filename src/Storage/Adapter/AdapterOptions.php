@@ -76,7 +76,7 @@ class AdapterOptions extends AbstractOptions
      * Adapter using this instance
      *
      * @param  StorageInterface|null $adapter
-     * @return AdapterOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setAdapter(StorageInterface $adapter = null)
     {
@@ -89,7 +89,7 @@ class AdapterOptions extends AbstractOptions
      *
      * @param  string $keyPattern
      * @throws Exception\InvalidArgumentException
-     * @return AdapterOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setKeyPattern($keyPattern)
     {
@@ -130,7 +130,7 @@ class AdapterOptions extends AbstractOptions
      * Set namespace.
      *
      * @param  string $namespace
-     * @return AdapterOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setNamespace($namespace)
     {
@@ -157,7 +157,7 @@ class AdapterOptions extends AbstractOptions
      * Enable/Disable reading data from cache.
      *
      * @param  bool $readable
-     * @return AdapterOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setReadable($readable)
     {
@@ -183,7 +183,7 @@ class AdapterOptions extends AbstractOptions
      * Set time to live.
      *
      * @param  int|float $ttl
-     * @return AdapterOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setTtl($ttl)
     {
@@ -209,7 +209,7 @@ class AdapterOptions extends AbstractOptions
      * Enable/Disable writing data to cache.
      *
      * @param  bool $writable
-     * @return AdapterOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setWritable($writable)
     {
@@ -300,7 +300,7 @@ class AdapterOptions extends AbstractOptions
      *
      * @param  array|Traversable|AbstractOptions $options
      * @throws Exception\InvalidArgumentException
-     * @return AbstractOptions Provides fluent interface
+     * @return self Provides fluent interface
      */
     public function setFromArray($options)
     {

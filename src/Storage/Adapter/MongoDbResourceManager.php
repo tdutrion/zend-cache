@@ -40,7 +40,7 @@ class MongoDbResourceManager
      * @param string $id
      * @param array|MongoCollection $resource
      *
-     * @return MongoDbResourceManager Provides a fluent interface
+     * @return self Provides a fluent interface
      *
      * @throws Exception\RuntimeException
      */

@@ -45,7 +45,7 @@ class MongoDbOptions extends AdapterOptions
      *
      * @param  string $namespaceSeparator
      *
-     * @return MongoDbOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setNamespaceSeparator($namespaceSeparator)
     {
@@ -75,7 +75,7 @@ class MongoDbOptions extends AdapterOptions
      *
      * @param null|MongoDbResourceManager $resourceManager
      *
-     * @return MongoDbOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setResourceManager(MongoDbResourceManager $resourceManager = null)
     {
@@ -113,7 +113,7 @@ class MongoDbOptions extends AdapterOptions
      *
      * @param string $resourceId
      *
-     * @return MongoDbOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setResourceId($resourceId)
     {
@@ -133,7 +133,7 @@ class MongoDbOptions extends AdapterOptions
      *
      * @param string $server
      *
-     * @return MongoDbOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setServer($server)
     {
@@ -146,7 +146,7 @@ class MongoDbOptions extends AdapterOptions
      *
      * @param array $connectionOptions
      *
-     * @return MongoDbOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setConnectionOptions(array $connectionOptions)
     {
@@ -159,7 +159,7 @@ class MongoDbOptions extends AdapterOptions
      *
      * @param array $driverOptions
     MongoDbOptions
-     * @return MongoDbOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setDriverOptions(array $driverOptions)
     {
@@ -172,7 +172,7 @@ class MongoDbOptions extends AdapterOptions
      *
      * @param string $database
      *
-     * @return MongoDbOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setDatabase($database)
     {
@@ -185,7 +185,7 @@ class MongoDbOptions extends AdapterOptions
      *
      * @param string $collection
      *
-     * @return MongoDbOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setCollection($collection)
     {

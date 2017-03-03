@@ -53,7 +53,7 @@ class Memory extends AbstractAdapter implements
      * Set options.
      *
      * @param  array|\Traversable|MemoryOptions $options
-     * @return Memory
+     * @return self Provides a fluent interface
      * @see    getOptions()
      */
     public function setOptions($options)

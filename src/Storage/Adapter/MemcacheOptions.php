@@ -77,7 +77,7 @@ class MemcacheOptions extends AdapterOptions
      * Set namespace separator
      *
      * @param  string $namespaceSeparator
-     * @return MemcacheOptions
+     * @return self Provides a fluent interface
      */
     public function setNamespaceSeparator($namespaceSeparator)
     {
@@ -103,7 +103,7 @@ class MemcacheOptions extends AdapterOptions
      * Set the memcache resource manager to use
      *
      * @param null|MemcacheResourceManager $resourceManager
-     * @return MemcacheOptions
+     * @return self Provides a fluent interface
      */
     public function setResourceManager(MemcacheResourceManager $resourceManager = null)
     {
@@ -141,7 +141,7 @@ class MemcacheOptions extends AdapterOptions
      * Set the memcache resource id
      *
      * @param string $resourceId
-     * @return MemcacheOptions
+     * @return self Provides a fluent interface
      */
     public function setResourceId($resourceId)
     {
@@ -183,7 +183,7 @@ class MemcacheOptions extends AdapterOptions
      * Sets a list of memcache servers to add on initialize
      *
      * @param string|array $servers list of servers
-     * @return MemcacheOptions
+     * @return self Provides a fluent interface
      * @throws Exception\InvalidArgumentException
      */
     public function setServers($servers)
@@ -206,7 +206,7 @@ class MemcacheOptions extends AdapterOptions
      * Set compress threshold
      *
      * @param  int|string|array|\ArrayAccess|null $threshold
-     * @return MemcacheOptions
+     * @return self Provides a fluent interface
      */
     public function setAutoCompressThreshold($threshold)
     {
@@ -228,7 +228,7 @@ class MemcacheOptions extends AdapterOptions
      * Set compress min savings option
      *
      * @param  float|string|null $minSavings
-     * @return MemcacheOptions
+     * @return self Provides a fluent interface
      */
     public function setAutoCompressMinSavings($minSavings)
     {
@@ -239,7 +239,7 @@ class MemcacheOptions extends AdapterOptions
     /**
      * Get compress min savings
      *
-     * @return Exception\RuntimeException
+     * @throws Exception\RuntimeException
      */
     public function getAutoCompressMinSavings()
     {
@@ -250,7 +250,7 @@ class MemcacheOptions extends AdapterOptions
      * Set default server values
      *
      * @param array $serverDefaults
-     * @return MemcacheOptions
+     * @return self Provides a fluent interface
      */
     public function setServerDefaults(array $serverDefaults)
     {
@@ -272,7 +272,7 @@ class MemcacheOptions extends AdapterOptions
      * Set callback for server connection failures
      *
      * @param callable $callback
-     * @return $this
+     * @return self Provides a fluent interface
      */
     public function setFailureCallback($callback)
     {

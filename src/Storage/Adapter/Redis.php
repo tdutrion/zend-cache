@@ -110,7 +110,7 @@ class Redis extends AbstractAdapter implements
      * Set options.
      *
      * @param  array|Traversable|RedisOptions $options
-     * @return Redis
+     * @return self Provides a fluent interface
      * @see    getOptions()
      */
     public function setOptions($options)

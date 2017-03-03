@@ -48,7 +48,7 @@ class DbaOptions extends AdapterOptions
      * Set namespace separator
      *
      * @param  string $namespaceSeparator
-     * @return DbaOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setNamespaceSeparator($namespaceSeparator)
     {
@@ -72,7 +72,7 @@ class DbaOptions extends AdapterOptions
      * Set pathname to database file
      *
      * @param string $pathname
-     * @return DbaOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setPathname($pathname)
     {
@@ -95,7 +95,7 @@ class DbaOptions extends AdapterOptions
      *
      *
      * @param string $mode
-     * @return DbaOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setMode($mode)
     {
@@ -113,7 +113,7 @@ class DbaOptions extends AdapterOptions
      *
      *
      * @param string $handler
-     * @return DbaOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setHandler($handler)
     {

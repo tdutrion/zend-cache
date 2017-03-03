@@ -27,7 +27,7 @@ class SessionOptions extends AdapterOptions
      * Set the session container
      *
      * @param  null|SessionContainer $sessionContainer
-     * @return SessionOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setSessionContainer(SessionContainer $sessionContainer = null)
     {

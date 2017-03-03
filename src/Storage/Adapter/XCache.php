@@ -75,7 +75,7 @@ class XCache extends AbstractAdapter implements
      * Set options.
      *
      * @param  array|Traversable|XCacheOptions $options
-     * @return XCache
+     * @return self Provides a fluent interface
      * @see    getOptions()
      */
     public function setOptions($options)

@@ -63,7 +63,7 @@ class Apcu extends AbstractAdapter implements
      * Set options.
      *
      * @param  array|Traversable|ApcuOptions $options
-     * @return Apcu
+     * @return self Provides a fluent interface
      * @see    getOptions()
      */
     public function setOptions($options)

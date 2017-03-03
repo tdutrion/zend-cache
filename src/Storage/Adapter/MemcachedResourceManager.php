@@ -173,7 +173,7 @@ class MemcachedResourceManager
      *
      * @param string $id
      * @param array|Traversable|MemcachedResource $resource
-     * @return MemcachedResourceManager Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setResource($id, $resource)
     {
@@ -208,7 +208,7 @@ class MemcachedResourceManager
      * Remove a resource
      *
      * @param string $id
-     * @return MemcachedResourceManager Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function removeResource($id)
     {
@@ -221,7 +221,7 @@ class MemcachedResourceManager
      *
      * @param string $id
      * @param string $persistentId
-     * @return MemcachedResourceManager Provides a fluent interface
+     * @return self Provides a fluent interface
      * @throws Exception\RuntimeException
      */
     public function setPersistentId($id, $persistentId)
@@ -284,7 +284,7 @@ class MemcachedResourceManager
      *
      * @param string $id
      * @param array  $libOptions
-     * @return MemcachedResourceManager Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setLibOptions($id, array $libOptions)
     {
@@ -347,7 +347,7 @@ class MemcachedResourceManager
      * @param string     $id
      * @param string|int $key
      * @param mixed      $value
-     * @return MemcachedResourceManager Fluent interface
+     * @return self Provides a fluent interface
      */
     public function setLibOption($id, $key, $value)
     {
@@ -432,7 +432,7 @@ class MemcachedResourceManager
      *
      * @param string       $id
      * @param string|array $servers
-     * @return MemcachedResourceManager Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setServers($id, $servers)
     {
@@ -463,7 +463,7 @@ class MemcachedResourceManager
      *
      * @param string       $id
      * @param string|array $servers
-     * @return MemcachedResourceManager Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function addServers($id, $servers)
     {
@@ -498,7 +498,7 @@ class MemcachedResourceManager
      *
      * @param string       $id
      * @param string|array $server
-     * @return MemcachedResourceManager
+     * @return self Provides a fluent interface
      */
     public function addServer($id, $server)
     {

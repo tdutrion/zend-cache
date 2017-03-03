@@ -102,7 +102,7 @@ final class CacheItem implements CacheItemInterface
      * code.
      *
      * @param boolean $isHit
-     * @return $this
+     * @return self Provides a fluent interface
      */
     public function setIsHit($isHit)
     {

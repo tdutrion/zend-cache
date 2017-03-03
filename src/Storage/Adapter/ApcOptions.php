@@ -25,7 +25,7 @@ class ApcOptions extends AdapterOptions
      * Set namespace separator
      *
      * @param  string $namespaceSeparator
-     * @return ApcOptions Provides a fluent interface
+     * @return self Provides a fluent interface
      */
     public function setNamespaceSeparator($namespaceSeparator)
     {
